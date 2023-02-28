@@ -131,40 +131,25 @@ class ViewController: UIViewController,
   // Exercise 7: Animate all karts all at once as if they were getting ready for a race
   // Tip: Use `getKartReadyToRace`
   private func runStartingAnimationsAllAtOnce() {
-    getKartReadyToRace(kart: kartView0)
-    getKartReadyToRace(kart: kartView1)
-    getKartReadyToRace(kart: kartView2)
+    // YOUR CODE HERE
   }
   
   // Exercise 8: Animate all karts one-by-one
   // Tip: Use `getKartReadyToRace` and its completion closure
   private func runStartingAnimationsOneByOne(completion: (() -> Void)? = nil) {
-    getKartReadyToRace(kart: kartView0) {
-      self.getKartReadyToRace(kart: self.kartView1) {
-        self.getKartReadyToRace(kart: self.kartView2) {
-          completion?()
-        }
-      }
-    }
+    // YOUR CODE HERE
   }
   
   // Exercise 9: Have the karts race all at once to the finish line!
   // Tip: Use the `translate` function above
   private func raceKartsWithSameSpeed() {
-    translate(kart: kartView0, by: view.frame.width)
-    translate(kart: kartView1, by: view.frame.width)
-    translate(kart: kartView2, by: view.frame.width)
+    // YOUR CODE HERE
   }
   
   // Exercise 10: Have the karts race all at once to the finish line!
   // Tip: Use the `translate` function above
   private func raceKartsWithRandomizedSpeed() {
-    let kartView0Speed = Double.random(in: 0.5...5)
-    translate(kart: kartView0, by: view.frame.width, animationDuration: kartView0Speed)
-    let kartView1Speed = Double.random(in: 0.5...5)
-    translate(kart: kartView1, by: view.frame.width, animationDuration: kartView1Speed)
-    let kartView2Speed = Double.random(in: 0.5...5)
-    translate(kart: kartView2, by: view.frame.width, animationDuration: kartView2Speed)
+    // YOUR CODE HERE
   }
 }
 

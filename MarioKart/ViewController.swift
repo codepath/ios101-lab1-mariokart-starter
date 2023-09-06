@@ -109,10 +109,6 @@ class ViewController: UIViewController,
   // Called whenever the view becomes visible on the screen
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    
-    runStartingAnimationsOneByOne {
-      self.raceKartsWithRandomizedSpeed()
-    }
   }
   
   private func getKartReadyToRace(kart: UIImageView,
